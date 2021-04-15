@@ -1,20 +1,20 @@
 apiVersion: run.tanzu.vmware.com/v1alpha1
 kind: TanzuKubernetesCluster
 metadata:
-  name: tkc-1
+  name: eck
 spec:
   distribution:
     version: v1.18
   topology:
     controlPlane:
-      class: guaranteed-small
+      class: best-effort-xsmall
       count: 1
-      storageClass: kubernetes-demo-storage
+      storageClass: eck-no-vsan-replication
     workers:
-      class: guaranteed-small
+      class: best-effort-xsmall
       count: 1
-      storageClass: kubernetes-demo-storage
+      storageClass: eck-no-vsan-replication
   settings:
     storage:
-      classes: ["kubernetes-demo-storage"]              #Named PVC storage classes
-      defaultClass: kubernetes-demo-storage                     #Default PVC storage class
+      classes: ["eck-no-vsan-replication"]              #Named PVC storage classes
+      defaultClass: eck-no-vsan-replication                     #Default PVC storage class
