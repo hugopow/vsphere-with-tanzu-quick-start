@@ -1,0 +1,20 @@
+apiVersion: run.tanzu.vmware.com/v1alpha1
+kind: TanzuKubernetesCluster
+metadata:
+  name: eck
+spec:
+  distribution:
+    version: v1.18
+  topology:
+    controlPlane:
+      class: best-effort-xsmall
+      count: 1
+      storageClass: eck-no-vsan-replication
+    workers:
+      class: best-effort-xsmall
+      count: 1
+      storageClass: eck-no-vsan-replication
+  settings:
+    storage:
+      classes: ["eck-no-vsan-replication"]              #Named PVC storage classes
+      defaultClass: eck-no-vsan-replication                     #Default PVC storage class
