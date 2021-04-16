@@ -13,8 +13,8 @@ spec:
     workers:
       class: best-effort-xsmall
       count: 1
-      storageClass: sna-high-iops
+      storageClass: tanzu-supervisor-cluster-raid-1
   settings:
     storage:
-      classes: ["sna-high-iops"]              #Named PVC storage classes
-      defaultClass: sna-high-iops                     #Default PVC storage class
+      classes: ["tanzu-supervisor-cluster-raid-1"]              #Named PVC storage classes
+      defaultClass: tanzu-supervisor-cluster-raid-1                     #Default PVC storage class
