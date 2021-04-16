@@ -9,7 +9,7 @@ spec:
     controlPlane:
       class: best-effort-xsmall
       count: 1
-      storageClass: tanzu-supervisor-cluster-raid-1
+      storageClass: sna-high-iops
     workers:
       class: best-effort-xsmall
       count: 1
