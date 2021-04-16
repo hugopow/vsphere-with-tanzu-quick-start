@@ -13,8 +13,8 @@ spec:
     workers:
       class: best-effort-xsmall
       count: 1
-      storageClass: sna-high
+      storageClass: sna-high-iops
   settings:
     storage:
-      classes: ["sna-high"]              #Named PVC storage classes
-      defaultClass: sna-high                     #Default PVC storage class
+      classes: ["sna-high-iops"]              #Named PVC storage classes
+      defaultClass: sna-high-iops                     #Default PVC storage class
