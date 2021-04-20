@@ -1,5 +1,5 @@
 apiVersion: run.tanzu.vmware.com/v1alpha1
-kind: TanzuKubernetesCluster
+kind: tanzukubernetescluster
 metadata:
   name: eck
 spec:
