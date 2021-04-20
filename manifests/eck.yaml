@@ -12,7 +12,7 @@ spec:
       storageClass: sna-high-iops
     workers:
       class: best-effort-xsmall
-      count: 2
+      count: 1
       storageClass: sna-high-iops
   settings:
     storage:
