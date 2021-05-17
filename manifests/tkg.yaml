@@ -1,0 +1,20 @@
+apiVersion: run.tanzu.vmware.com/v1alpha1
+kind: TanzuKubernetesCluster
+metadata:
+  name: tkg
+spec:
+  distribution:
+    version: v1.18
+  topology:
+    controlPlane:
+      class: best-effort-xsmall
+      count: 1
+      storageClass: vsan-raid-1
+    workers:
+      class: best-effort-xsmall
+      count: 1
+      storageClass: vsan-raid-1
+  settings:
+    storage:
+      classes: ["vsan-raid-1"]              #Named PVC storage classes
+      defaultClass: vsan-raid-1                     #Default PVC storage class
