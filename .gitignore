@@ -1,0 +1,8 @@
+
+manifests/ARCHIVE/tkc.yaml
+manifests/ARCHIVE/svc.yaml
+manifests/ARCHIVE/pod.yaml
+manifests/ARCHIVE/pvc.yaml
+manifests/pod.yaml
+manifests/svc.yaml
+manifests/pod.yaml
