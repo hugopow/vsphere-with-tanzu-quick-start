@@ -9,12 +9,12 @@ spec:
     controlPlane:
       class: best-effort-xsmall
       count: 1
-      storageClass: vsan-raid-1
+      storageClass: tanzu-vsan-raid-1
     workers:
       class: best-effort-xsmall
       count: 1
-      storageClass: vsan-raid-1
+      storageClass: tanzu-vsan-raid-1
   settings:
     storage:
-      classes: ["vsan-raid-1"]              #Named PVC storage classes
-      defaultClass: vsan-raid-1                     #Default PVC storage class
+      classes: ["tanzu-vsan-raid-1"]              #Named PVC storage classes
+      defaultClass: tanzu-vsan-raid-1                     #Default PVC storage class
